@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book an appointment | Innova Hospital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<header class="top">
+  <div class="strip"><div class="wrap"><span>Open 24 hours. Inpatient and outpatient care.</span><span>Call <a href="tel:+254713187220">+254 713 187 220</a></span></div></div>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Innova Hospital home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#C8102E"/><path d="M5 17h6l3-7 4 13 3-6h6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>Innova Hospital</b><small>Mutalia</small></span>
+    </a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Our team</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="book.html" aria-current="page">Book appointment</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Book an appointment</p>
+    <h1>Book an appointment</h1>
+    <p>Tell us what you need and when you would like to come. Reception confirms your slot.</p>
+  </div>
+</section>
+<main>
+<section class="band">
+  <div class="wrap split top">
+    <div>
+      <p class="eyebrow">Request a visit</p>
+      <h2>Tell us when you would like to come</h2>
+      <p class="lead">Fill in the form and keep the summary it gives you. Our reception confirms your slot by phone or when you arrive.</p>
+      <div class="vals">
+        <div><h3>Open 24 hours</h3><p>Reception is open at any hour. Call <a href="tel:+254713187220">+254 713 187 220</a> if you prefer to book by phone.</p></div>
+        <div><h3>Emergency</h3><p>Do not wait for a booking. Come straight to the hospital.</p></div>
+        <div><h3>Insurance</h3><p>We accept insurance. Bring your card with you.</p></div>
+      </div>
+      <div id="result" hidden tabindex="-1" aria-live="polite"></div>
+    </div>
+    <form id="appt" novalidate>
+      <div class="row">
+        <label for="f-name">Full name<input id="f-name" name="name" autocomplete="name" required></label>
+        <label for="f-phone">Phone number<input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="07XX XXX XXX" required></label>
+      </div>
+      <div class="row">
+        <label for="f-date">Preferred date<input id="f-date" name="date" type="date" required></label>
+        <label for="f-dept">Service
+          <select id="f-dept" name="dept" required>
+            <option value="">Choose a service</option>
+            <option>Outpatient consultation</option>
+            <option>Specialist consultation</option>
+            <option>Maternity care</option>
+            <option>Diagnostic tests</option>
+            <option>Surgical consultation</option>
+          </select>
+        </label>
+      </div>
+      <label for="f-reason">Reason for visit (optional)<textarea id="f-reason" name="reason"></textarea></label>
+      <button class="btn" type="submit">Prepare my request</button>
+      <p class="note">For an emergency, do not wait for a booking. Come straight to the hospital.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Innova Hospital</h4>
+      <p>Mutalia, off Kangundo Road.<br>A 24-hour medical facility offering inpatient and outpatient care.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our team</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="book.html">Book an appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit us</h4>
+      <p>Open 24 hours<br>Insurance accepted<br>Phone: <a href="tel:+254713187220">+254 713 187 220</a></p>
+    </div>
+    <p class="legal">&copy; 2026 Innova Hospital. In an emergency, come straight to the hospital at any hour.</p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
